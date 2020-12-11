@@ -1,0 +1,7 @@
+*.swp
+
+dist/
+node_modules/
+.cache/
+lib/wasm_exec.js
+wrangler.toml
