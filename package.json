@@ -1,0 +1,38 @@
+{
+  "name": "@wabarc/on-cloudflare",
+  "version": "0.0.1",
+  "description": "Host wayback service on Cloudflare using Worker.",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wabarc/on-cloudflare.git"
+  },
+  "author": "Wayback Archiver",
+  "license": "GPL-3.0-or-later",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/wabarc/on-cloudflare/issues"
+  },
+  "homepage": "https://github.com/wabarc/on-cloudflare#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "init": "wrangler init --type javascript",
+    "build": "parcel build --no-source-maps -d dist index.js",
+    "preview": "wrangler preview --watch"
+  },
+  "keywords": [
+    "wayback",
+    "Cloudflare",
+    "Worker",
+    "Golang"
+  ],
+  "devDependencies": {
+    "@cloudflare/wrangler": "^1.19.0",
+    "parcel": "^2.0.0-rc.0"
+  },
+  "browserslist": [
+    "since 2017-06"
+  ]
+}
